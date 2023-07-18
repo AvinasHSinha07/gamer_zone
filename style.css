@@ -2,5 +2,47 @@
     padding: 0;
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
-    
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    font-size: 1.3rem;
+    color: black;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo-G{
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.pages ul{
+    list-style: none;
+    display: flex;
+    /* margin-right: 10px; */
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.pages ul li a{
+    text-decoration: none;
+}
+.followus{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 15px;
 }
