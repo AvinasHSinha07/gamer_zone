@@ -155,6 +155,47 @@ line-height: normal;
     width: 100%;
     margin-bottom: 12px;
 }
+.image-overlay{
+    position: relative;
+
+}
+.image-overlay:hover .overlay{
+    display: block;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.488);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    object-fit: cover;
+    overflow: hidden;
+    transform: scaleX(100%) scaleY(95%) translateY(-10px);
+    border-radius: 13px;
+    /* display: none; */
+    color: white;
+    text-align: center;
+    padding-top: 50%;
+    border: 2px solid #FF42A5;
+    cursor: pointer;
+  
+
+}
+.overlay:hover{
+    opacity: 1;
+    color: #FF42A5;
+
+}
+.overlay-desc{
+    margin-top: 15px;    
+}
+
+
+
+
+
 .card-description{
     color: #0b0223b1;
 }
