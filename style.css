@@ -173,7 +173,7 @@ line-height: normal;
     opacity: 0;
     object-fit: cover;
     overflow: hidden;
-    transform: scaleX(100%) scaleY(95%) translateY(-10px);
+    transform: scaleX(100%) scaleY(98%) translateY(-8px);
     border-radius: 13px;
     /* display: none; */
     color: white;
