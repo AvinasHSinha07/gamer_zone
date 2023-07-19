@@ -457,4 +457,37 @@ footer{
         align-items: center;
         justify-content: start;
     }
+
+    .story ul{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        width: 700px;
+        margin: 0 auto;
+        /* padding-left: 15px; */
+        text-align: center;
+
+    }
+    .icons{
+        margin-bottom: 25px;
+       
+        width: 100%;
+        gap: 15px;
+    }
+    .svg{
+        /* align-self: stretch; */
+        justify-self:center;
+    }
+    .terms ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        /* align-items: center;
+        justify-content: center; */
+        /* max-width: 550px;
+        margin: 0 auto; */
+        gap: 10px;
+    }
+
+
 }
