@@ -527,6 +527,20 @@ footer{
         font-size: 2rem;
         margin-bottom: 5px;
     }
+    .banner-title{
+        font-size: 1rem;
+    }
+    
+    .goat{
+        font-size: 2rem;
+    }
+    .online-games-title,.og-span{
+        color: #0B0223;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+    
+    }
     .games{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(4,1fr);
@@ -557,7 +571,7 @@ footer{
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(3,1fr);
         /* max-width: 550px; */
-        padding: 0 25px;
+        padding: 0 15px;
         flex-wrap: nowrap;
         gap: 10px;
         /* margin: 0 auto; */
@@ -565,7 +579,7 @@ footer{
         margin-left: 15px;
     }
     .box{
-        width: 180px;
+        /* width: 180px; */
         align-items: center;
         justify-content: start;
     }
@@ -574,10 +588,11 @@ footer{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(2,1fr);
-        width: 500px;
-        margin: 0 auto;
+        /* width: 500px;
+        margin: 0 auto; */
         /* padding-left: 15px; */
         text-align: center;
+        font-size: .9rem;
 
     }
     /* .terms{
@@ -594,7 +609,7 @@ footer{
         margin-bottom: 25px;
        
         /* width: 100%; */
-        gap: 15px;
+        gap: 10px;
     }
     .svg{
         align-self: center;
@@ -608,6 +623,9 @@ footer{
         justify-content: center; */
         /* max-width: 550px;
         margin: 0 auto; */
+        align-items: center;
+        justify-items: center;
+        font-size: .8rem;
     }
     .categories{
         display: grid;
