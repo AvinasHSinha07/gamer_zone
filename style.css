@@ -211,9 +211,9 @@ background-clip: text;
     margin-bottom: 150px;
     
 }
-.center{
+/* .center{
     
-}
+} */
 
 /* .second{
     display: grid;
@@ -274,7 +274,23 @@ footer{
     gap: 20px;
     font-size: 1.5rem;
 }
+.terms{
+    margin-bottom: 50px;
+}
+.terms ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.5rem;
+}
 .story ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.terms ul li a{
     color: white;
     text-decoration: none;
     font-weight: 600;
@@ -297,4 +313,112 @@ footer{
     color: rgba(255, 255, 255, 0.709);
     text-align: center;
     font-size: 1.5rem;
+}
+
+
+
+@media screen and (max-width:576px) {
+    .navbar{
+        flex-direction: column;
+    }
+    /* .logo{
+        flex-direction: column;
+    } */
+    .pages ul{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        margin-left: 15px;
+    }
+    .online-games-title, .og-span{
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+    .games{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr);
+        padding: 15px;
+    }
+    .card-description{
+        font-size: 1.5rem;
+    }
+    .play-games{
+        flex-direction: column-reverse;
+        max-width: 550px;
+        margin: 0 auto;
+        
+    }
+    .image-box .large-img{
+        width: 100%;
+    }
+    .image-box .relativeimg
+    {
+        width: 40%;
+        left: 320px;
+        
+    }
+
+    .categories{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        /* max-width: 550px; */
+        padding: 0 25px;
+        flex-wrap: nowrap;
+        gap: 10px;
+        /* margin: 0 auto; */
+        
+        margin-left: 15px;
+    }
+    .box{
+        width: 180px;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .story ul,.icons{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        width: 500px;
+        margin: 0 auto;
+        /* padding-left: 15px; */
+        text-align: center;
+
+    }
+    /* .terms{
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        width: 500px;
+        margin: 0 auto;
+        padding-left: 15px;
+        text-align: center;
+    } */
+    .icons{
+        margin-bottom: 25px;
+       
+        width: 100%;
+        gap: 15px;
+    }
+    .svg{
+        align-self: center;
+        justify-self: center;
+    }
+    .terms ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        /* align-items: center;
+        justify-content: center; */
+        /* max-width: 550px;
+        margin: 0 auto; */
+    }
+    
+
 }
