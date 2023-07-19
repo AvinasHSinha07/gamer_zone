@@ -134,8 +134,8 @@ background-clip: text;
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-font-family: Work Sans;
-font-size: 48px;
+/* font-family: Work Sans; */
+font-size: 3rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -146,10 +146,11 @@ line-height: normal;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 14px;
-    max-width: 1100px;
+    /* max-width: 1100px; */
     /* background-color: red; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     margin-top: 50px;
+    padding: 0 20px;
 }
 .card-img{
     width: 100%;
@@ -172,7 +173,7 @@ line-height: normal;
     opacity: 0;
     object-fit: cover;
     overflow: hidden;
-    transform: scaleX(100%) scaleY(100%) translateY(-10px);
+    transform: scaleX(100%) scaleY(95%) translateY(-10px);
     border-radius: 13px;
     /* display: none; */
     color: white;
@@ -244,8 +245,8 @@ background-clip: text;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1100px;
-    margin: 0 auto;
+    /* max-width: 1100px;
+    margin: 0 auto; */
     margin-top: 150px;
     /* background-color: #4EC5F7; */
     gap: 20px;
@@ -278,15 +279,15 @@ margin-right: 15px;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    width: 200px;
+    /* width: 200px; */
 }
 .box:hover{
     border-radius: 50px;
     background: #FFF;
     border: 2px solid #FF42A5;
     color: #FF42A5;
-    min-width: 0px;
-    overflow: hidden;
+    /* min-width: 0px;
+    overflow: hidden; */
 }
 
 footer{
@@ -358,13 +359,160 @@ footer{
 
 
 
-@media screen and (max-width:576px) {
+
+
+
+
+
+@media screen and (max-width:425px){
+    .navbar{
+        /* display: flex; */
+        flex-direction: column;
+        padding: 5px;
+    
+        font-size: .8rem;
+    
+    }
+     .logo{
+        flex-direction: column;
+        gap: 5px;
+    } 
+    .pages ul{
+        /* list-style: none; */
+        /* display: flex; */
+        margin-right: 0px;
+        margin-top: 5px;
+       flex-direction: column;
+        gap: 8px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        /* font-size: 1rem; */
+        /* margin-left: 50px; */
+    }
+    .banner-title{
+        font-size: 1rem;
+
+    }
+    .followus{
+        border-radius: 8px;
+        background: rgba(11, 2, 35, 0.10);
+        padding: 5px;
+    }
+    .banner{
+    flex-direction: column-reverse;
+    gap: 10px;
+    /* background-color: #FF42A5; */
+    padding: 10px;   
+    font-size: 1rem;
+    }
+.banner-content{
+    text-align: center;
+}
+.banner-title{
+    font-size: 1rem;
+}
+
+.goat{
+    font-size: 2rem;
+}
+.online-games-title,.og-span{
+    color: #0B0223;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+.games{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 10px;
+    
+}
+.play-games{
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 150px;
+}
+.large-img{
+    width: 90%;
+    /* background-position:  */
+    /* height: 50%; */
+}
+.relativeimg{
+    position: absolute;
+    bottom: -70px;
+    right: 30px;
+    width: 30%;
+}
+.play-games-title{
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+.play-games-description{
+    font-size: 1rem;
+    color: #0b0223b5;
+}
+
+.categories{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(9,1fr);
+    /* max-width: 550px; */
+    padding: 0px;
+    flex-wrap: nowrap;
+    gap: 10px;
+    /* margin: 0 auto; */
+   
+    margin-left: 15px;
+}
+.box{
+    width: 70%;
+    align-items: start;
+    justify-content: start;
+}
+
+.story ul,.icons{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    /* width: 500px; */
+    /* margin: 0 auto; */
+    /* padding-left: 15px; */
+    text-align: center;
+    font-size: .8rem;
+    align-self: center;
+    justify-self: center;
+}
+.icons{
+    align-items: center;
+    justify-items: center;
+}
+.footer-desc{
+    font-size: .6rem;
+}
+.terms ul{
+    font-size: .9rem;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+
+}
+
+
+
+@media screen and (min-width:426px) and (max-width: 576px) {
     .navbar{
         flex-direction: column;
     }
-    /* .logo{
+    .logo{
         flex-direction: column;
-    } */
+    }
     .pages ul{
         flex-direction: column;
         margin-top: 20px;
@@ -399,7 +547,8 @@ footer{
     .image-box .relativeimg
     {
         width: 40%;
-        left: 320px;
+        bottom: 0;
+        right: 0;
         
     }
 
@@ -444,7 +593,7 @@ footer{
     .icons{
         margin-bottom: 25px;
        
-        width: 100%;
+        /* width: 100%; */
         gap: 15px;
     }
     .svg{
@@ -460,8 +609,15 @@ footer{
         /* max-width: 550px;
         margin: 0 auto; */
     }
+    .categories{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,1fr);
+    }
 
 }
+
+
 
 @media screen and (min-width:576px) and (max-width:768px){
     .navbar{
@@ -479,8 +635,8 @@ footer{
     }
     .play-games{
         flex-direction: column-reverse;
-        max-width: 700px;
-        margin: 0 auto;
+        /* max-width: 700px;
+        margin: 0 auto; */
         /* background-color: red; */
         
     }
@@ -489,22 +645,23 @@ footer{
     }
     .image-box .relativeimg
     {
-        width: 50%;
-        left: 350px;
+        width: 30%;
+        bottom: 0;
+        right: 0;
         
     }
     .box{
-        width: 180px;
+        /* width: 180px; */
         align-items: center;
-        justify-content: start;
+        justify-content: center;
     }
 
     .story ul{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(2,1fr);
-        width: 700px;
-        margin: 0 auto;
+        /* width: 700px; */
+        /* margin: 0 auto; */
         /* padding-left: 15px; */
         text-align: center;
 
@@ -529,6 +686,16 @@ footer{
         margin: 0 auto; */
         gap: 10px;
     }
+
+    .categories{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        align-items: center;
+        justify-items: start;
+        margin-left: 5px;
+    }
+
 
 
 }
