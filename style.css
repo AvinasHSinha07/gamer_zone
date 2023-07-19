@@ -25,9 +25,9 @@
 
 .logo-G{
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .pages ul{
@@ -81,12 +81,12 @@ background-clip: text;
 .banner-features{
     list-style-type: none;
     margin-bottom: 30px;
-    font-size: 1.5rem;
+    font-size: .9rem;
      /* display: flex;  */
     align-items: center;
     /* justify-content: center;  */
     /* flex-direction: column;  */
-    width: 150%;
+    width: 100%;
 }
 
 .banner-features li{
@@ -172,7 +172,7 @@ line-height: normal;
     opacity: 0;
     object-fit: cover;
     overflow: hidden;
-    transform: scaleX(100%) scaleY(95%) translateY(-10px);
+    transform: scaleX(100%) scaleY(100%) translateY(-10px);
     border-radius: 13px;
     /* display: none; */
     color: white;
