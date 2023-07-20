@@ -77,6 +77,8 @@
 }
 .banner-content{
     text-align: left;
+    background-image: url('./Group14.png');
+    background-size: cover;
 }
 .banner-features{
     list-style-type: none;
